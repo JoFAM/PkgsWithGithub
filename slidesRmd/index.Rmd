@@ -20,6 +20,7 @@ In order to build packages, you need the following tools:
   4. git 
   5. an account on https://github.com/
   
+You can read more on the installation in the articles below.
 
 <div class="jumbotron">
   <h2>Installation of the tools you need.</h2>
@@ -28,6 +29,10 @@ In order to build packages, you need the following tools:
     <a href="installgit.html" class="btn btn-primary btn-lg" role="button">Installation of git </a>
     <a href="githubaccount.html" class="btn btn-primary btn-lg" role="button">Create an account on GitHub</a>
 </div>
+
+## Extra reading material
+
+I don't intend to copy all the great content that is already available online. Below you find a couple of links to books and manuals that helped me find my way.
 
 <div class="jumbotron">
   <h2>Extra reading material.</h2>
