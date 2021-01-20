@@ -1,0 +1,21 @@
+name: "PkgWithGithub"
+output_dir: "../docs"
+navbar:
+  title: "Developing Packages with RStudio and Github"
+  left:
+    - text: "Home"
+      icon: fa-home
+      href: index.html
+    - text: "Installation"
+      icon: fa-book
+      menu:
+        - text: "Installation of tools : R and Rtools"
+          href: install.html
+        - text: "Installation of tools : git"
+          href: installgit.html
+        - text: "Create a GitHub account"
+          href: githubaccount.html
+output:
+  html_document:
+    theme: cosmo
+    css: myown.css

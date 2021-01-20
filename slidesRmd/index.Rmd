@@ -1,0 +1,31 @@
+---
+title: "Developing R packages with RStudio and Github"
+---
+
+<p class = "lead">
+R packages offer a neat and organised way to share your code for others to use. Git and GitHub offer a neat and organised way to organise the development of your code, and share the files with others. RStudio combines the power of R and Git, so you can develop your packages using a single interface.
+</p>
+
+## The tools you need
+
+In order to build packages, you need the following tools:
+
+  1. R (version 4.0 ) with the following packages installed:
+      - roxygen2
+      - pkgbuild
+      - remotes
+      - devtools
+  2. RStudio (version 1.3 or higher)
+  3. RTools if on Windows (see further)
+  4. git 
+  5. an account on https://github.com/
+  
+
+<div class="jumbotron">
+  <h2>Installation of the tools you need.</h2>
+  
+  <p><a href="installrtools.html" class="btn btn-primary btn-lg" role="button">Installation of Rtools </a>
+    <a href="installgit.html" class="btn btn-primary btn-lg" role="button">Installation of git </a>
+    <a href="githubaccount.html" class="btn btn-primary btn-lg" role="button">Create an account on GitHub</a>
+</div>
+

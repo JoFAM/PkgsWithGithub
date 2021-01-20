@@ -1,0 +1,43 @@
+---
+title: "Necessary tools: git"
+---
+
+In order to be able to work with git, you need to install it first. `git` is in itself a command line tool, but you can use RStudio and a number of other graphical interfaces to interact with it. 
+
+Before you continue, first check wether you have `git` installed. On Linux and Mac this is often preinstalled already. To do so, open a terminal and type the command:
+
+```
+git --version
+```
+
+at the prompt. If it complains that the command `git` is not found, you know you'll have to install it.
+
+## Install git
+
+If `git` is not installed, I recommend the `git-scm` distribution. You can download the installer for Windows or Mac here:
+
+https://git-scm.com/
+
+After installation, try again
+
+```
+git --version
+```
+
+in a terminal/command prompt to see whether the `git` command can be found. 
+
+## Optionally install a git GUI
+
+While you can use RStudio as an interface to `git` when developing packages, it's often useful to have another interface available. There's a wide range of interfaces, but I'll suggest two. These are optional.
+
+**Github Desktop**
+
+This is by far the easiest interface to work with. It takes away much of the hassle of working with `git`. You find it at the following website:
+
+https://desktop.github.com/
+
+**Tortoise-git**
+
+Tortoise adds a number of git commands and tools to the menus in Windows Explorer. It can be useful for those who want to take things a bit further, but want to stay away from the command line itself as much as possible. You can download it here:
+
+https://tortoisegit.org/

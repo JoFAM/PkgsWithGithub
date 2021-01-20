@@ -1,0 +1,27 @@
+---
+title: "Necessary tools : R and RTools"
+---
+
+Windows users need RTools to be able to build packages from source. This is not only handy for developing packages, it also allows you to install source packages from other sources than CRAN.
+
+To install Rtools, go to the following website to download the installer:
+
+https://cran.r-project.org/bin/windows/Rtools/
+
+Pay attention:
+
+ - do NOT install in Program Files, use the default C:\\Rtools
+ - Putting Rtools on the PATH is not necessary when using RStudio.
+ 
+After you've installed RTools, you can check whether your installastion works using the following code:
+
+```{r}
+pkgbuild::has_rtools()
+```
+
+To check whether building a package works, you can use the code below to download and install a small example package from my own github:
+
+```{r, eval = FALSE}
+remotes::install_github("JoFAM/installtest")
+```
+

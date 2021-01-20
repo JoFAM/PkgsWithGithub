@@ -1,0 +1,13 @@
+---
+title: "Creating an account on GitHub"
+---
+
+In order to store your work somewhere "in the cloud", you need to work with a remote server. The most used option is GitHub, although both gitlab and bitbucket are strong contenders. This introduction will use GitHub though. You find this at:
+
+https://github.com
+
+## Create an account
+
+On the main page of GitHub, you click on "Sign Up" in the upper right corner. You're lead to page where you can select a user name, add an email address and give a password. After verifying you're a real person, click on "create account" and you're good to go.
+
+**Important**: your username will be what you use to login, but also your github handle. This handle is used as part of the link to your repositories and websites, and is also the tag people can use to refer to you on the website. Mine is `JoFAM`, as you might have noticed already. Choose this wisely.
