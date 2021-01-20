@@ -1,5 +1,5 @@
 ---
-title: "Setting up your first package with git"
+title: "Setting up an RStudio project with git"
 ---
 
 ## Set up a git repository on github
@@ -10,9 +10,9 @@ A repository is the name used for a project that uses git for version control. T
 <div style="float: left; width: 70%;">
  1. Go to https://github.com and log in.
  2. In the right top, click on the + sign and select "New Repository" (see image)
- 3. Give the repository a name. This will be the name of your package as well. Use only letters and numbers, or you will end up with an invalid name for a package!
+ 3. Give the repository a name. Best use only letters and numbers, to avoid creating an invalid name for an RStudio project.
  4. Give a description. It's optional, but do so anyway.
- 5. Select "add a README file"
+ 5. Select "add a README file" (not necessary, but good practice.)
  6. Click "Create repository"
 </div>
 
@@ -57,5 +57,4 @@ Here we'll use RStudio to clone the repository to your own computer.
 <img src="image/ProjectMenu3.png" style="width:33%">
 </div>
 </div>
-
 

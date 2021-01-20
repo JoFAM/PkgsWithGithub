@@ -1,0 +1,82 @@
+---
+title: "Setting up an RStudio project for a package"
+---
+
+To start using RStudio for creating packages, you need to create a specific kind of project. Making this into a git repository requires a bit more work. There's multiple ways to do this, and here you'll find two:
+
+ 1. Create locally, and then publish the repository on GitHub. 
+ 2. Create a git repository as explained in [Setting up an RStudio project with git](setupgitrepo.html), and then convert it to a package.
+ 
+The first method is easy if you use GitHub Desktop. The second method is useful if you prefer to work from github, or can't use the Desktop app.
+
+## Creating a package locally
+
+ 1. Start again from the menu File > New Project
+ 2. Select New Directory, then R package
+ 3. Fill in a name for the package and select the folder where the package should be placed in. RStudio will make a subfolder. Don't forget to tick the box "create a git repository".
+ 4. Click "Create Project"
+ 
+<div class="container" style="width: 100%">
+
+<div style="display: inline-block">
+<img src="image/PackageMenu1.png" style="width:33%">
+<img src="image/PackageMenu2.png" style="width:33%">
+<img src="image/PackageMenu3.png" style="width:33%">
+</div>
+</div>
+
+## Add the package to GitHub using the Desktop app
+
+Now open GitHub Desktop to publish the repository on GitHub. 
+
+ 1. From the dropdown menu File, select "Add local repository"
+ 2. Click on the button "Choose" and browse to the folder of the package you just created. 
+ 3. Click "Add repository".
+ 
+Now you've added the project to your Desktop app. In order to publish, you need to create an initial *commit*. 
+
+ 4. Look at the bottom left. You need to fill in a summary there. Add something like "initial commit" and click on "commit to main"
+
+<div class="container" style="width: 100%">
+<center>
+<img src="image/commit.png" style="width:33%">
+</center>
+</div>
+ 
+ 5. You're ready to publish. Click on "Publish Repository".
+
+<div class="container" style="width: 100%">
+<center>
+<img src="image/PublishRepository.png" style="width:66%">
+</center>
+</div> 
+ 
+ 5. In the popup menu, the name of the project is already filled in for you. Add a description and unselect the tick box "Keep this code private" if you want other people to see your work. Then click on "Publish repository".
+ 
+<div class="container" style="width: 100%">
+<center>
+<img src="image/publishpopup.png" style="width:40%">
+</center>
+</div> 
+
+This pushes everything to GitHub. If you then click on "Show on Github", it will take you to the project page on github.com. 
+
+## Converting a project to a package
+
+If you followed the procedure explained in [Setting up an RStudio project with git](setupgitrepo.html), you can still convert this project to a package. For that, you open the project in RStudio and type the following code in the console:
+
+```
+devtools::create(".")
+```
+
+RStudio will complain though. It will give you the message:
+
+```
+New project 'PkgsWithGithub' is nested inside an existing project './', which is rarely a good idea.
+If this is unexpected, the here package has a function, `here::dr_here()` that reveals why './' is regarded as a project.
+Do you want to create anyway?
+```
+
+You can safely use the option that would equate a "yes". (You'll find 3 options, only one being affirmative, and often in a different order). After you've done that, a new instance of RStudio will open with the project converted to a package.
+
+The reason for the complaint, is the fact that you change the project type in RStudio itself. Most often you don't want to do this, but in this case you actually do.

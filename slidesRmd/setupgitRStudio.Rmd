@@ -26,7 +26,9 @@ This will give you the location of the git executable.
 
 ## Create a token (PAT) for login 
 
-Recently, GitHub changed its policy. You won't be able to connect to your repositories if you don't create a PAT. You can work through SSH, but a PAT is easier to set up.
+If you use GitHub Desktop, you normally shouldn't need to create a personal access token (PAT) to connect to your repositories. In case you don't use GitHub Desktop or you're still asked for a login and password when working in RStudio, you'll need to do this once.
+
+Recently, GitHub changed its policy and doesn't allow you to use your normal github password to connect to a repository. You either have to use a PAT or use SSH. You can work through SSH if you know it, but a PAT is easier to set up.
 
 You can see a PAT as a unique password that can only be used for connecting. 
 

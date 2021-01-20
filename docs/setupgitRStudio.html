@@ -321,10 +321,16 @@ $(document).ready(function () {
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
+      <a href="setupgithubdesktop.html">Setting up GitHub Desktop</a>
+    </li>
+    <li>
       <a href="setupgitRStudio.html">Connecting git and RStudio</a>
     </li>
     <li>
       <a href="setupgitrepo.html">Setting up a repository</a>
+    </li>
+    <li>
+      <a href="setuppackage.html">Setting up a package</a>
     </li>
   </ul>
 </li>
@@ -364,7 +370,8 @@ which git  # on Linux/Mac</code></pre>
 </div>
 <div id="create-a-token-pat-for-login" class="section level2">
 <h2>Create a token (PAT) for login</h2>
-<p>Recently, GitHub changed its policy. You won’t be able to connect to your repositories if you don’t create a PAT. You can work through SSH, but a PAT is easier to set up.</p>
+<p>If you use GitHub Desktop, you normally shouldn’t need to create a personal access token (PAT) to connect to your repositories. In case you don’t use GitHub Desktop or you’re still asked for a login and password when working in RStudio, you’ll need to do this once.</p>
+<p>Recently, GitHub changed its policy and doesn’t allow you to use your normal github password to connect to a repository. You either have to use a PAT or use SSH. You can work through SSH if you know it, but a PAT is easier to set up.</p>
 <p>You can see a PAT as a unique password that can only be used for connecting.</p>
 <p>To set create a PAT, follow the steps 1 to 9 on the following link:</p>
 <p><a href="https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token" class="uri">https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token</a></p>

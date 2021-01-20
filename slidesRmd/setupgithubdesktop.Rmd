@@ -1,0 +1,16 @@
+---
+title: "Setup GitHub Desktop"
+---
+
+Although you can perfectly use git through RStudio, using [GitHub Desktop](https://desktop.github.com/) can make it easier to manage different projects.
+
+After installing the application, you can find the authentication procedure in the [GitHub Desktop documentation](https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/authenticating-to-github). In short:
+
+ 1. Open GitHub Desktop, and in the File drop-down menu, click "Options."
+ 2. In the Opsiont window, select Accounts.
+ 3. To the right of "GitHub.com", click on "Sign in".
+ 4. **important!** Don't just add your username and password. Instead, click on "Sign in using your browser".
+ 5. Use your username and password to login. (if you were logged in already, this step will be skipped)
+ 6. Follow the prompts to return to GitHub Desktop. 
+ 
+Now you've linked GitHub Desktop to your github account. Doing it this way, creates a personal access token (PAT) that's stored safely on your computer.

@@ -18,10 +18,14 @@ navbar:
     - text: "Getting started"
       icon: fa-book
       menu:
+        - text: "Setting up GitHub Desktop"
+          href: setupgithubdesktop.html
         - text: "Connecting git and RStudio"
           href: setupgitRStudio.html
         - text: "Setting up a repository"
           href: setupgitrepo.html
+        - text: "Setting up a package"
+          href: setuppackage.html
 output:
   html_document:
     theme: cosmo

@@ -11,7 +11,7 @@
 
 
 
-<title>Developing R packages with RStudio and Github</title>
+<title>Setting up an RStudio project for a package</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -346,59 +346,76 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Developing R packages with RStudio and Github</h1>
+<h1 class="title toc-ignore">Setting up an RStudio project for a package</h1>
 
 </div>
 
 
-<p class="lead">
-R packages offer a neat and organised way to share your code for others to use. Git and GitHub offer a neat and organised way to organise the development of your code, and share the files with others. RStudio combines the power of R and Git, so you can develop your packages using a single interface.
-</p>
-<div id="the-tools-you-need" class="section level2">
-<h2>The tools you need</h2>
-<p>In order to build packages, you need the following tools:</p>
+<p>To start using RStudio for creating packages, you need to create a specific kind of project. Making this into a git repository requires a bit more work. There’s multiple ways to do this, and here you’ll find two:</p>
 <ol style="list-style-type: decimal">
-<li>R (version 4.0 ) with the following packages installed:
-<ul>
-<li>roxygen2</li>
-<li>pkgbuild</li>
-<li>remotes</li>
-<li>devtools</li>
-</ul></li>
-<li>RStudio (version 1.3 or higher)</li>
-<li>RTools if on Windows (see further)</li>
-<li>git</li>
-<li>an account on <a href="https://github.com/" class="uri">https://github.com/</a></li>
+<li>Create locally, and then publish the repository on GitHub.</li>
+<li>Create a git repository as explained in <a href="setupgitrepo.html">Setting up an RStudio project with git</a>, and then convert it to a package.</li>
 </ol>
-<p>You can read more on the installation in the articles below.</p>
-<div class="jumbotron">
-<h2>
-Installation of the tools you need.
-</h2>
-<p>
-<a href="installrtools.html" class="btn btn-primary btn-lg" role="button">Installation of Rtools </a> <a href="installgit.html" class="btn btn-primary btn-lg" role="button">Installation of git </a> <a href="githubaccount.html" class="btn btn-primary btn-lg" role="button">Create an account on GitHub</a>
+<p>The first method is easy if you use GitHub Desktop. The second method is useful if you prefer to work from github, or can’t use the Desktop app.</p>
+<div id="creating-a-package-locally" class="section level2">
+<h2>Creating a package locally</h2>
+<ol style="list-style-type: decimal">
+<li>Start again from the menu File &gt; New Project</li>
+<li>Select New Directory, then R package</li>
+<li>Fill in a name for the package and select the folder where the package should be placed in. RStudio will make a subfolder. Don’t forget to tick the box “create a git repository”.</li>
+<li>Click “Create Project”</li>
+</ol>
+<div class="container" style="width: 100%">
+<div style="display: inline-block">
+<p><img src="image/PackageMenu1.png" style="width:33%"> <img src="image/PackageMenu2.png" style="width:33%"> <img src="image/PackageMenu3.png" style="width:33%"></p>
 </div>
 </div>
-<div id="extra-reading-material" class="section level2">
-<h2>Extra reading material</h2>
-<p>I don’t intend to copy all the great content that is already available online. Below you find a couple of links to books and manuals that helped me find my way.</p>
-<div class="jumbotron">
-<h2>
-Extra reading material.
-</h2>
-<p>
-<a href="https://happygitwithr.com/" class="btn btn-primary btn-lg" role="button">Git/GitHub for the useR (Jenny Bryan)</a> <br>
-<p>
-<a href="https://r-pkgs.org/" class="btn btn-primary btn-lg" role="button">R Packages (Hadley Wickham)</a> <br>
-<p>
-<a href="https://cran.r-project.org/doc/manuals/R-exts.html" class="btn btn-primary btn-lg" role="button">The manual on packages (R Core Team)</a> <br>
-<p>
-<a href="https://docs.github.com/en/github" class="btn btn-primary btn-lg" role="button">Documentation of Github, the website</a> <br>
-<p>
-<a href="https://docs.github.com/en/desktop" class="btn btn-primary btn-lg" role="button">Documentation of the GUI Github Desktop</a> <br>
-<p>
-<a href="https://github.com/git-guides/" class="btn btn-primary btn-lg" role="button">The Git Guides: documentation on the git system</a>
 </div>
+<div id="add-the-package-to-github-using-the-desktop-app" class="section level2">
+<h2>Add the package to GitHub using the Desktop app</h2>
+<p>Now open GitHub Desktop to publish the repository on GitHub.</p>
+<ol style="list-style-type: decimal">
+<li>From the dropdown menu File, select “Add local repository”</li>
+<li>Click on the button “Choose” and browse to the folder of the package you just created.</li>
+<li>Click “Add repository”.</li>
+</ol>
+<p>Now you’ve added the project to your Desktop app. In order to publish, you need to create an initial <em>commit</em>.</p>
+<ol start="4" style="list-style-type: decimal">
+<li>Look at the bottom left. You need to fill in a summary there. Add something like “initial commit” and click on “commit to main”</li>
+</ol>
+<div class="container" style="width: 100%">
+<center>
+<img src="image/commit.png" style="width:33%">
+</center>
+</div>
+<ol start="5" style="list-style-type: decimal">
+<li>You’re ready to publish. Click on “Publish Repository”.</li>
+</ol>
+<div class="container" style="width: 100%">
+<center>
+<img src="image/PublishRepository.png" style="width:66%">
+</center>
+</div>
+<ol start="5" style="list-style-type: decimal">
+<li>In the popup menu, the name of the project is already filled in for you. Add a description and unselect the tick box “Keep this code private” if you want other people to see your work. Then click on “Publish repository”.</li>
+</ol>
+<div class="container" style="width: 100%">
+<center>
+<img src="image/publishpopup.png" style="width:40%">
+</center>
+</div>
+<p>This pushes everything to GitHub. If you then click on “Show on Github”, it will take you to the project page on github.com.</p>
+</div>
+<div id="converting-a-project-to-a-package" class="section level2">
+<h2>Converting a project to a package</h2>
+<p>If you followed the procedure explained in <a href="setupgitrepo.html">Setting up an RStudio project with git</a>, you can still convert this project to a package. For that, you open the project in RStudio and type the following code in the console:</p>
+<pre><code>devtools::create(&quot;.&quot;)</code></pre>
+<p>RStudio will complain though. It will give you the message:</p>
+<pre><code>New project &#39;PkgsWithGithub&#39; is nested inside an existing project &#39;./&#39;, which is rarely a good idea.
+If this is unexpected, the here package has a function, `here::dr_here()` that reveals why &#39;./&#39; is regarded as a project.
+Do you want to create anyway?</code></pre>
+<p>You can safely use the option that would equate a “yes”. (You’ll find 3 options, only one being affirmative, and often in a different order). After you’ve done that, a new instance of RStudio will open with the project converted to a package.</p>
+<p>The reason for the complaint, is the fact that you change the project type in RStudio itself. Most often you don’t want to do this, but in this case you actually do.</p>
 </div>
 
 

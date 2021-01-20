@@ -11,7 +11,7 @@
 
 
 
-<title>Developing R packages with RStudio and Github</title>
+<title>Setup GitHub Desktop</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -346,60 +346,22 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Developing R packages with RStudio and Github</h1>
+<h1 class="title toc-ignore">Setup GitHub Desktop</h1>
 
 </div>
 
 
-<p class="lead">
-R packages offer a neat and organised way to share your code for others to use. Git and GitHub offer a neat and organised way to organise the development of your code, and share the files with others. RStudio combines the power of R and Git, so you can develop your packages using a single interface.
-</p>
-<div id="the-tools-you-need" class="section level2">
-<h2>The tools you need</h2>
-<p>In order to build packages, you need the following tools:</p>
+<p>Although you can perfectly use git through RStudio, using <a href="https://desktop.github.com/">GitHub Desktop</a> can make it easier to manage different projects.</p>
+<p>After installing the application, you can find the authentication procedure in the <a href="https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/authenticating-to-github">GitHub Desktop documentation</a>. In short:</p>
 <ol style="list-style-type: decimal">
-<li>R (version 4.0 ) with the following packages installed:
-<ul>
-<li>roxygen2</li>
-<li>pkgbuild</li>
-<li>remotes</li>
-<li>devtools</li>
-</ul></li>
-<li>RStudio (version 1.3 or higher)</li>
-<li>RTools if on Windows (see further)</li>
-<li>git</li>
-<li>an account on <a href="https://github.com/" class="uri">https://github.com/</a></li>
+<li>Open GitHub Desktop, and in the File drop-down menu, click “Options.”</li>
+<li>In the Opsiont window, select Accounts.</li>
+<li>To the right of “GitHub.com”, click on “Sign in”.</li>
+<li><strong>important!</strong> Don’t just add your username and password. Instead, click on “Sign in using your browser”.</li>
+<li>Use your username and password to login. (if you were logged in already, this step will be skipped)</li>
+<li>Follow the prompts to return to GitHub Desktop.</li>
 </ol>
-<p>You can read more on the installation in the articles below.</p>
-<div class="jumbotron">
-<h2>
-Installation of the tools you need.
-</h2>
-<p>
-<a href="installrtools.html" class="btn btn-primary btn-lg" role="button">Installation of Rtools </a> <a href="installgit.html" class="btn btn-primary btn-lg" role="button">Installation of git </a> <a href="githubaccount.html" class="btn btn-primary btn-lg" role="button">Create an account on GitHub</a>
-</div>
-</div>
-<div id="extra-reading-material" class="section level2">
-<h2>Extra reading material</h2>
-<p>I don’t intend to copy all the great content that is already available online. Below you find a couple of links to books and manuals that helped me find my way.</p>
-<div class="jumbotron">
-<h2>
-Extra reading material.
-</h2>
-<p>
-<a href="https://happygitwithr.com/" class="btn btn-primary btn-lg" role="button">Git/GitHub for the useR (Jenny Bryan)</a> <br>
-<p>
-<a href="https://r-pkgs.org/" class="btn btn-primary btn-lg" role="button">R Packages (Hadley Wickham)</a> <br>
-<p>
-<a href="https://cran.r-project.org/doc/manuals/R-exts.html" class="btn btn-primary btn-lg" role="button">The manual on packages (R Core Team)</a> <br>
-<p>
-<a href="https://docs.github.com/en/github" class="btn btn-primary btn-lg" role="button">Documentation of Github, the website</a> <br>
-<p>
-<a href="https://docs.github.com/en/desktop" class="btn btn-primary btn-lg" role="button">Documentation of the GUI Github Desktop</a> <br>
-<p>
-<a href="https://github.com/git-guides/" class="btn btn-primary btn-lg" role="button">The Git Guides: documentation on the git system</a>
-</div>
-</div>
+<p>Now you’ve linked GitHub Desktop to your github account. Doing it this way, creates a personal access token (PAT) that’s stored safely on your computer.</p>
 
 
 

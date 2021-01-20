@@ -11,7 +11,7 @@
 
 
 
-<title>Setting up your first package with git</title>
+<title>Setting up an RStudio project with git</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -321,10 +321,16 @@ $(document).ready(function () {
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
+      <a href="setupgithubdesktop.html">Setting up GitHub Desktop</a>
+    </li>
+    <li>
       <a href="setupgitRStudio.html">Connecting git and RStudio</a>
     </li>
     <li>
       <a href="setupgitrepo.html">Setting up a repository</a>
+    </li>
+    <li>
+      <a href="setuppackage.html">Setting up a package</a>
     </li>
   </ul>
 </li>
@@ -340,7 +346,7 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Setting up your first package with git</h1>
+<h1 class="title toc-ignore">Setting up an RStudio project with git</h1>
 
 </div>
 
@@ -353,9 +359,9 @@ $(document).ready(function () {
 <ol style="list-style-type: decimal">
 <li>Go to <a href="https://github.com" class="uri">https://github.com</a> and log in.</li>
 <li>In the right top, click on the + sign and select “New Repository” (see image)</li>
-<li>Give the repository a name. This will be the name of your package as well. Use only letters and numbers, or you will end up with an invalid name for a package!</li>
+<li>Give the repository a name. Best use only letters and numbers, to avoid creating an invalid name for an RStudio project.</li>
 <li>Give a description. It’s optional, but do so anyway.</li>
-<li>Select “add a README file”</li>
+<li>Select “add a README file” (not necessary, but good practice.)</li>
 <li>Click “Create repository”</li>
 </ol>
 </div>
