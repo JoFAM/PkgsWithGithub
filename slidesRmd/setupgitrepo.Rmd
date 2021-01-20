@@ -1,0 +1,61 @@
+---
+title: "Setting up your first package with git"
+---
+
+## Set up a git repository on github
+
+A repository is the name used for a project that uses git for version control. To create such a project for a package, there's a few different options. The most easy option starts with creating a repository in github first. 
+
+<div class="container" style="width: 100%">
+<div style="float: left; width: 70%;">
+ 1. Go to https://github.com and log in.
+ 2. In the right top, click on the + sign and select "New Repository" (see image)
+ 3. Give the repository a name. This will be the name of your package as well. Use only letters and numbers, or you will end up with an invalid name for a package!
+ 4. Give a description. It's optional, but do so anyway.
+ 5. Select "add a README file"
+ 6. Click "Create repository"
+</div>
+
+<div style="float: right; width: 30%;">
+<center>
+<img src="image/NewRepository.png" style="width:70%">
+</center>
+</div>
+</div>
+
+<p>
+Now you will be taken to the page of your github repository. </p>
+
+## Clone the repository to your computer.
+
+The nice thing about git is that you can work locally on your computer. The website GitHub is called "the remote" and can be seen as a hub through which you can pass your work to other collaborators. Transferring a project to your own computer is called **cloning**.
+
+Here we'll use RStudio to clone the repository to your own computer.
+
+<div style="float: left; width: 70%;">
+ 1. On the page of the repository, click on the button Code.
+ 2. Select HTTPS and click on the icon to copy the link (see image).
+</div>
+
+<div style="float: right; width: 30%;">
+<center>
+<img src="image/CopyLinkRepo.png" style="width:100%">
+</center>
+</div>
+ 
+ 3. Open RStudio and select from the menu File > New Project.
+ 4. In the dialogs, select Version Control, then Git.
+ 5. Paste the link from the github repository in the field "Repository URL". The Project directory name is automatically set.
+ 6. Choose a folder where you save the project. It's good practice to have one folder on your computer where you keep all your git projects.
+
+**The menu choices in RStudio**
+<div class="container" style="width: 100%">
+
+<div style="display: inline-block">
+<img src="image/ProjectMenu1.png" style="width:33%">
+<img src="image/ProjectMenu2.png" style="width:33%">
+<img src="image/ProjectMenu3.png" style="width:33%">
+</div>
+</div>
+
+

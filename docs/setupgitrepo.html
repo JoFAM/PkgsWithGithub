@@ -11,7 +11,7 @@
 
 
 
-<title>Creating an account on GitHub</title>
+<title>Setting up your first package with git</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -340,17 +340,62 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Creating an account on GitHub</h1>
+<h1 class="title toc-ignore">Setting up your first package with git</h1>
 
 </div>
 
 
-<p>In order to store your work somewhere “in the cloud”, you need to work with a remote server. The most used option is GitHub, although both gitlab and bitbucket are strong contenders. This introduction will use GitHub though. You find this at:</p>
-<p><a href="https://github.com" class="uri">https://github.com</a></p>
-<div id="create-an-account" class="section level2">
-<h2>Create an account</h2>
-<p>On the main page of GitHub, you click on “Sign Up” in the upper right corner. You’re lead to page where you can select a user name, add an email address and give a password. After verifying you’re a real person, click on “create account” and you’re good to go.</p>
-<p><strong>Important</strong>: your username will be what you use to login, but also your github handle. This handle is used as part of the link to your repositories and websites, and is also the tag people can use to refer to you on the website. Mine is <code>JoFAM</code>, as you might have noticed already. Choose this wisely.</p>
+<div id="set-up-a-git-repository-on-github" class="section level2">
+<h2>Set up a git repository on github</h2>
+<p>A repository is the name used for a project that uses git for version control. To create such a project for a package, there’s a few different options. The most easy option starts with creating a repository in github first.</p>
+<div class="container" style="width: 100%">
+<div style="float: left; width: 70%;">
+<ol style="list-style-type: decimal">
+<li>Go to <a href="https://github.com" class="uri">https://github.com</a> and log in.</li>
+<li>In the right top, click on the + sign and select “New Repository” (see image)</li>
+<li>Give the repository a name. This will be the name of your package as well. Use only letters and numbers, or you will end up with an invalid name for a package!</li>
+<li>Give a description. It’s optional, but do so anyway.</li>
+<li>Select “add a README file”</li>
+<li>Click “Create repository”</li>
+</ol>
+</div>
+<div style="float: right; width: 30%;">
+<center>
+<img src="image/NewRepository.png" style="width:70%">
+</center>
+</div>
+</div>
+<p>
+Now you will be taken to the page of your github repository.
+</p>
+</div>
+<div id="clone-the-repository-to-your-computer." class="section level2">
+<h2>Clone the repository to your computer.</h2>
+<p>The nice thing about git is that you can work locally on your computer. The website GitHub is called “the remote” and can be seen as a hub through which you can pass your work to other collaborators. Transferring a project to your own computer is called <strong>cloning</strong>.</p>
+<p>Here we’ll use RStudio to clone the repository to your own computer.</p>
+<div style="float: left; width: 70%;">
+<ol style="list-style-type: decimal">
+<li>On the page of the repository, click on the button Code.</li>
+<li>Select HTTPS and click on the icon to copy the link (see image).</li>
+</ol>
+</div>
+<div style="float: right; width: 30%;">
+<center>
+<img src="image/CopyLinkRepo.png" style="width:100%">
+</center>
+</div>
+<ol start="3" style="list-style-type: decimal">
+<li>Open RStudio and select from the menu File &gt; New Project.</li>
+<li>In the dialogs, select Version Control, then Git.</li>
+<li>Paste the link from the github repository in the field “Repository URL”. The Project directory name is automatically set.</li>
+<li>Choose a folder where you save the project. It’s good practice to have one folder on your computer where you keep all your git projects.</li>
+</ol>
+<strong>The menu choices in RStudio</strong>
+<div class="container" style="width: 100%">
+<div style="display: inline-block">
+<p><img src="image/ProjectMenu1.png" style="width:33%"> <img src="image/ProjectMenu2.png" style="width:33%"> <img src="image/ProjectMenu3.png" style="width:33%"></p>
+</div>
+</div>
 </div>
 
 

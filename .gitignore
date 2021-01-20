@@ -1,2 +1,7 @@
 .Rproj.user
 .Rhistory
+
+# Intermediate files for rendering
+slidesRmd/*.html
+slidesRmd/*.md
+slidesRmd/image/*

@@ -15,6 +15,13 @@ navbar:
           href: installgit.html
         - text: "Create a GitHub account"
           href: githubaccount.html
+    - text: "Getting started"
+      icon: fa-book
+      menu:
+        - text: "Connecting git and RStudio"
+          href: setupgitRStudio.html
+        - text: "Setting up a repository"
+          href: setupgitrepo.html
 output:
   html_document:
     theme: cosmo

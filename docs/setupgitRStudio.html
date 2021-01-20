@@ -11,7 +11,7 @@
 
 
 
-<title>Creating an account on GitHub</title>
+<title>Setup RStudio to work with git</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -340,17 +340,37 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Creating an account on GitHub</h1>
+<h1 class="title toc-ignore">Setup RStudio to work with git</h1>
 
 </div>
 
 
-<p>In order to store your work somewhere “in the cloud”, you need to work with a remote server. The most used option is GitHub, although both gitlab and bitbucket are strong contenders. This introduction will use GitHub though. You find this at:</p>
-<p><a href="https://github.com" class="uri">https://github.com</a></p>
-<div id="create-an-account" class="section level2">
-<h2>Create an account</h2>
-<p>On the main page of GitHub, you click on “Sign Up” in the upper right corner. You’re lead to page where you can select a user name, add an email address and give a password. After verifying you’re a real person, click on “create account” and you’re good to go.</p>
-<p><strong>Important</strong>: your username will be what you use to login, but also your github handle. This handle is used as part of the link to your repositories and websites, and is also the tag people can use to refer to you on the website. Mine is <code>JoFAM</code>, as you might have noticed already. Choose this wisely.</p>
+<div id="make-rstudio-find-git" class="section level2">
+<h2>Make RStudio find git</h2>
+<p>If everything is installed, RStudio should be able to find git. It might be though that RStudio isn’t set up to work with git yet. In order to do so:</p>
+<ol style="list-style-type: decimal">
+<li>Go to Tools &gt; Global Options in RStudio.</li>
+<li>Click on Git/VSN</li>
+<li>If necessary, select “Enable version control interface for RStudio projects”.</li>
+<li>If necessary, add the location of the Git executable.</li>
+</ol>
+<center>
+<img src="image/SetupGitRStudio.png" style="width:70%">
+</center>
+<p>If you can’t find the executable, you can open a terminal and use one of following commands:</p>
+<pre><code>where git  # on Windows
+which git  # on Linux/Mac</code></pre>
+<p>This will give you the location of the git executable.</p>
+</div>
+<div id="create-a-token-pat-for-login" class="section level2">
+<h2>Create a token (PAT) for login</h2>
+<p>Recently, GitHub changed its policy. You won’t be able to connect to your repositories if you don’t create a PAT. You can work through SSH, but a PAT is easier to set up.</p>
+<p>You can see a PAT as a unique password that can only be used for connecting.</p>
+<p>To set create a PAT, follow the steps 1 to 9 on the following link:</p>
+<p><a href="https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token" class="uri">https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token</a></p>
+<p>In step 7, select “repo” and “delete repo”.</p>
+<p><strong>WARNING: WHEN YOU CREATE A PAT, YOU CAN ONLY SEE IT ONCE. COPY IT TO EG NOTEPAD SO YOU DON’T LOSE IT!</strong></p>
+<p>You’ll need this the first time you connect RStudio to GitHub. After that, everything is stored in the credential manager of your operating system and you don’t need to bother about it any more.</p>
 </div>
 
 
