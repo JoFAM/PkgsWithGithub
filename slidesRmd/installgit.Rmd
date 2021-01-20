@@ -18,6 +18,11 @@ If `git` is not installed, I recommend the `git-scm` distribution. You can downl
 
 https://git-scm.com/
 
+During the installation, you will be asked a lot of questions. For most of those, you can simply accept the defaults. There's two where you need to pay attention:
+
+ - When asked to adjust the name of the initial branch, you better select the option to override. Git used "master" as the standard name for the default branch, but this is deemed insensitive. So recently this switched to "main". Select that one.
+ - When asked about "Adjusting your PATH environment", make sure the option "Git from the command line and also from 3rd-party software" is selected. This should be the default, but double check it anyway.
+
 After installation, try again
 
 ```
