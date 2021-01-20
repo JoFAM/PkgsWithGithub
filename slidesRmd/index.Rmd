@@ -43,9 +43,11 @@ I don't intend to copy all the great content that is already available online. B
 <br>
   <p><a href="https://cran.r-project.org/doc/manuals/R-exts.html" class="btn btn-primary btn-lg" role="button">The manual on packages (R Core Team)</a>
 <br>
-<p><a href="https://docs.github.com/en/desktop" class="btn btn-primary btn-lg" role="button">Documentation of Github Desktop</a>
+<p><a href="https://docs.github.com/en/github" class="btn btn-primary btn-lg" role="button">Documentation of Github, the website</a>
 <br>
-<p><a href="https://github.com/git-guides/" class="btn btn-primary btn-lg" role="button">The Git Guides</a>
+<p><a href="https://docs.github.com/en/desktop" class="btn btn-primary btn-lg" role="button">Documentation of the GUI Github Desktop</a>
+<br>
+<p><a href="https://github.com/git-guides/" class="btn btn-primary btn-lg" role="button">The Git Guides: documentation on the git system</a>
 </div>
 
 
