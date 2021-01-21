@@ -48,6 +48,10 @@ I don't intend to copy all the great content that is already available online. B
 <p><a href="https://docs.github.com/en/desktop" class="btn btn-primary btn-lg" role="button">Documentation of the GUI Github Desktop</a>
 <br>
 <p><a href="https://github.com/git-guides/" class="btn btn-primary btn-lg" role="button">The Git Guides: documentation on the git system</a>
+<br>
+<p><a href="https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging" class="btn btn-primary btn-lg" role="button">Git manual: visual explanation on branching and merging</a>
+
+</div>
 </div>
 
 
