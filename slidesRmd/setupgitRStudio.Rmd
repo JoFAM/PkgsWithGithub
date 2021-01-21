@@ -42,3 +42,10 @@ In step 7, select "repo" and "delete repo".
 
 You'll need this the first time you connect RStudio to GitHub. After that, everything is stored in the credential manager of your operating system and you don't need to bother about it any more. 
 
+## What if git keeps asking about your login
+
+Normally a first login using GitHub Desktop or RStudio should store your credentials. In the odd case git keeps asking about your login every time you push, there's a few other options you can try. 
+
+These are well explained in the [relevant chapter of Happy with Git R](https://happygitwithr.com/credential-caching.html#credential-caching)
+
+First try the mentioned R packages. If that still doesn't help, you'll find links to the relevant parts of the official documentation.
